@@ -1,0 +1,2039 @@
+Started GET "/" for 127.0.0.1 at 2017-05-09 16:25:24 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/Jeff/.rvm/gems/ruby-2.4.1/gems/railties-5.1.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/Jeff/.rvm/gems/ruby-2.4.1/gems/railties-5.1.0/lib/rails/templates/rails/welcome/index.html.erb (5.5ms)
+Completed 200 OK in 189ms (Views: 20.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-09 16:31:15 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 489ms (Views: 325.1ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-05-09 16:34:27 -0500
+  
+ActionController::RoutingError (uninitialized constant ArticlesController):
+  
+activesupport (5.1.0) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.0) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.0) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.0) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.0) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.0) lib/action_dispatch/http/request.rb:82:in `controller_class'
+actionpack (5.1.0) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.0) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.0) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.0) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.0) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.0) lib/action_dispatch/routing/route_set.rb:832:in `call'
+rack (2.0.2) lib/rack/etag.rb:25:in `call'
+rack (2.0.2) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.2) lib/rack/head.rb:12:in `call'
+rack (2.0.2) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.2) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.0) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.0) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.0) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.2) lib/rack/method_override.rb:22:in `call'
+rack (2.0.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.2) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.0) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/articles/new" for 127.0.0.1 at 2017-05-09 16:35:54 -0500
+  
+AbstractController::ActionNotFound (The action 'new' could not be found for ArticlesController):
+  
+actionpack (5.1.0) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.0) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.0) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.0) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.0) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.0) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.0) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.0) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.0) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.0) lib/action_dispatch/routing/route_set.rb:832:in `call'
+rack (2.0.2) lib/rack/etag.rb:25:in `call'
+rack (2.0.2) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.2) lib/rack/head.rb:12:in `call'
+rack (2.0.2) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.2) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.0) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.0) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.0) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.2) lib/rack/method_override.rb:22:in `call'
+rack (2.0.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.2) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.0) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/articles/new" for 127.0.0.1 at 2017-05-09 16:36:25 -0500
+Processing by ArticlesController#new as HTML
+Completed 406 Not Acceptable in 185ms
+
+
+  
+ActionController::UnknownFormat (ArticlesController#new is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.0) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.0) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.0) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.0) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.0) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.0) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.0) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.0) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.0) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.0) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.0) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.0) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.0) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.0) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.0) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.0) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.0) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.0) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.0) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.0) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.0) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.0) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.0) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.0) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.0) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.0) lib/action_dispatch/routing/route_set.rb:832:in `call'
+rack (2.0.2) lib/rack/etag.rb:25:in `call'
+rack (2.0.2) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.2) lib/rack/head.rb:12:in `call'
+rack (2.0.2) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.2) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.0) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.0) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.0) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.2) lib/rack/method_override.rb:22:in `call'
+rack (2.0.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.2) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.0) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/articles/new" for 127.0.0.1 at 2017-05-09 16:38:34 -0500
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 281ms (Views: 279.5ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-05-09 16:43:16 -0500
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (24.9ms)
+Completed 200 OK in 42ms (Views: 39.9ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-05-09 16:46:26 -0500
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 20ms (Views: 18.0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-05-09 16:46:44 -0500
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 17ms (Views: 15.3ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-05-09 16:47:10 -0500
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 349ms (Views: 162.7ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2017-05-09 16:47:31 -0500
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for ArticlesController):
+  
+actionpack (5.1.0) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.0) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.0) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.0) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.0) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.0) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.0) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.0) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.0) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.0) lib/action_dispatch/routing/route_set.rb:832:in `call'
+rack (2.0.2) lib/rack/etag.rb:25:in `call'
+rack (2.0.2) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.2) lib/rack/head.rb:12:in `call'
+rack (2.0.2) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.2) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.0) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.0) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.0) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.2) lib/rack/method_override.rb:22:in `call'
+rack (2.0.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.2) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.0) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/articles" for 127.0.0.1 at 2017-05-09 16:48:08 -0500
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UYk3xNEhdZ/03Q+0++jEZCBq2uWD4b32mYhMM1UGQx8Z9IEXIsr7UoLKtCXX9PLvMtJrWvXa/52FGo002DrHDQ==", "article"=>{"title"=>"asdfaf", "text"=>"asdfasf"}, "commit"=>"Save Article"}
+No template found for ArticlesController#create, rendering head :no_content
+Completed 204 No Content in 47ms
+
+
+Started POST "/articles" for 127.0.0.1 at 2017-05-09 16:48:12 -0500
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UYk3xNEhdZ/03Q+0++jEZCBq2uWD4b32mYhMM1UGQx8Z9IEXIsr7UoLKtCXX9PLvMtJrWvXa/52FGo002DrHDQ==", "article"=>{"title"=>"asdfaf", "text"=>"asdfasf"}, "commit"=>"Save Article"}
+No template found for ArticlesController#create, rendering head :no_content
+Completed 204 No Content in 55ms
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-05-09 16:49:55 -0500
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 20ms (Views: 18.3ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2017-05-09 16:50:02 -0500
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"h9bSrBTZ8sxBqIgZIIrwCKpi8sZnHT38QhsJOWLcR+XPq2R/5zJ8ATe/M4gMlsaDuNpDeREmf5deicg+7+DD9w==", "article"=>{"title"=>"asdf", "text"=>"argaf afga "}, "commit"=>"Save Article"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 1.6ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateArticles (20170509215137)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "text" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170509215137"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-05-09 21:53:16.033030"], ["updated_at", "2017-05-09 21:53:16.033030"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/articles" for 127.0.0.1 at 2017-05-09 16:57:29 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"h9bSrBTZ8sxBqIgZIIrwCKpi8sZnHT38QhsJOWLcR+XPq2R/5zJ8ATe/M4gMlsaDuNpDeREmf5deicg+7+DD9w==", "article"=>{"title"=>"asdf", "text"=>"argaf afga "}, "commit"=>"Save Article"}
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.6ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/articles_controller.rb:6:in `create'
+Started POST "/articles" for 127.0.0.1 at 2017-05-09 17:01:06 -0500
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"h9bSrBTZ8sxBqIgZIIrwCKpi8sZnHT38QhsJOWLcR+XPq2R/5zJ8ATe/M4gMlsaDuNpDeREmf5deicg+7+DD9w==", "article"=>{"title"=>"asdf", "text"=>"argaf afga "}, "commit"=>"Save Article"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "asdf"], ["text", "argaf afga "], ["created_at", "2017-05-09 22:01:16.710668"], ["updated_at", "2017-05-09 22:01:16.710668"]]
+  [1m[35m (8.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/articles/1
+Completed 302 Found in 19ms (ActiveRecord: 10.0ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2017-05-09 17:01:16 -0500
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for ArticlesController):
+  
+actionpack (5.1.0) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.0) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.0) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.0) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.0) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.0) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.0) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.0) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.0) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.0) lib/action_dispatch/routing/route_set.rb:832:in `call'
+rack (2.0.2) lib/rack/etag.rb:25:in `call'
+rack (2.0.2) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.2) lib/rack/head.rb:12:in `call'
+rack (2.0.2) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.2) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.0) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.0) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.0) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.2) lib/rack/method_override.rb:22:in `call'
+rack (2.0.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.2) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.0) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/articles" for 127.0.0.1 at 2017-05-09 17:01:23 -0500
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"h9bSrBTZ8sxBqIgZIIrwCKpi8sZnHT38QhsJOWLcR+XPq2R/5zJ8ATe/M4gMlsaDuNpDeREmf5deicg+7+DD9w==", "article"=>{"title"=>"asdf", "text"=>"argaf afga "}, "commit"=>"Save Article"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "asdf"], ["text", "argaf afga "], ["created_at", "2017-05-09 22:01:23.915008"], ["updated_at", "2017-05-09 22:01:23.915008"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/articles/2
+Completed 302 Found in 5ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/articles/2" for 127.0.0.1 at 2017-05-09 17:01:23 -0500
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for ArticlesController):
+  
+actionpack (5.1.0) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.0) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.0) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.0) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.0) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.0) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.0) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.0) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.0) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.0) lib/action_dispatch/routing/route_set.rb:832:in `call'
+rack (2.0.2) lib/rack/etag.rb:25:in `call'
+rack (2.0.2) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.2) lib/rack/head.rb:12:in `call'
+rack (2.0.2) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.2) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.0) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.0) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.0) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.2) lib/rack/method_override.rb:22:in `call'
+rack (2.0.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.2) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.0) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/articles" for 127.0.0.1 at 2017-05-09 17:05:40 -0500
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"h9bSrBTZ8sxBqIgZIIrwCKpi8sZnHT38QhsJOWLcR+XPq2R/5zJ8ATe/M4gMlsaDuNpDeREmf5deicg+7+DD9w==", "article"=>{"title"=>"asdf", "text"=>"argaf afga "}, "commit"=>"Save Article"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "asdf"], ["text", "argaf afga "], ["created_at", "2017-05-09 22:05:40.261278"], ["updated_at", "2017-05-09 22:05:40.261278"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/articles/3
+Completed 302 Found in 17ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/articles/3" for 127.0.0.1 at 2017-05-09 17:05:40 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 223ms (Views: 216.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/3" for 127.0.0.1 at 2017-05-09 17:13:17 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 26ms (Views: 16.1ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2017-05-09 17:13:23 -0500
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"h9bSrBTZ8sxBqIgZIIrwCKpi8sZnHT38QhsJOWLcR+XPq2R/5zJ8ATe/M4gMlsaDuNpDeREmf5deicg+7+DD9w==", "article"=>{"title"=>"asdf", "text"=>"argaf afga "}, "commit"=>"Save Article"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "asdf"], ["text", "argaf afga "], ["created_at", "2017-05-09 22:13:23.738831"], ["updated_at", "2017-05-09 22:13:23.738831"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/articles/4
+Completed 302 Found in 4ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/articles/4" for 127.0.0.1 at 2017-05-09 17:13:23 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 17ms (Views: 14.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2017-05-09 17:13:39 -0500
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"h9bSrBTZ8sxBqIgZIIrwCKpi8sZnHT38QhsJOWLcR+XPq2R/5zJ8ATe/M4gMlsaDuNpDeREmf5deicg+7+DD9w==", "article"=>{"title"=>"zxcvzcvzcv", "text"=>"zxcv xcv zxcv z"}, "commit"=>"Save Article"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "zxcvzcvzcv"], ["text", "zxcv xcv zxcv z"], ["created_at", "2017-05-09 22:13:39.723557"], ["updated_at", "2017-05-09 22:13:39.723557"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/articles/5
+Completed 302 Found in 4ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/articles/5" for 127.0.0.1 at 2017-05-09 17:13:39 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 14.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-05-09 17:13:48 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/Jeff/workspace/rails/blog/app/views/articles/index.html.erb:18: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/articles/index.html.erb:18: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started POST "/articles" for 127.0.0.1 at 2017-05-09 17:18:49 -0500
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"h9bSrBTZ8sxBqIgZIIrwCKpi8sZnHT38QhsJOWLcR+XPq2R/5zJ8ATe/M4gMlsaDuNpDeREmf5deicg+7+DD9w==", "article"=>{"title"=>"find ti", "text"=>"where is the article list?"}, "commit"=>"Save Article"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "find ti"], ["text", "where is the article list?"], ["created_at", "2017-05-09 22:18:49.913596"], ["updated_at", "2017-05-09 22:18:49.913596"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/articles/6
+Completed 302 Found in 5ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/articles/6" for 127.0.0.1 at 2017-05-09 17:18:49 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 22ms (Views: 20.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/article" for 127.0.0.1 at 2017-05-09 17:19:56 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/article"):
+  
+actionpack (5.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.2) lib/rack/method_override.rb:22:in `call'
+rack (2.0.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.2) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.0) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/articles" for 127.0.0.1 at 2017-05-09 17:20:02 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/Jeff/workspace/rails/blog/app/views/articles/index.html.erb:19: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/articles/index.html.erb:19: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/" for 127.0.0.1 at 2017-05-09 17:22:30 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 218ms (Views: 216.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-05-09 17:27:38 -0500
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2017-05-09 17:27:58 -0500
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Co9uK9kRAetk5HvwvaFwRqLX+gUjSRQehGFqGwTv+ClC8tj4KvqPJhLzwGGRvUbNsG9LulVyVnWY86scidN8Ow==", "article"=>{"title"=>"yet another new article", "text"=>"asdf a zxv sdf zdfgbds fdgbsdg bsgdb dsf gbsf gbsf bdf hb  dfh"}, "commit"=>"Save Article"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "yet another new article"], ["text", "asdf a zxv sdf zdfgbds fdgbsdg bsgdb dsf gbsf gbsf bdf hb  dfh"], ["created_at", "2017-05-09 22:27:58.307230"], ["updated_at", "2017-05-09 22:27:58.307230"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/articles/7
+Completed 302 Found in 11ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/articles/7" for 127.0.0.1 at 2017-05-09 17:27:58 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 13.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-05-09 17:28:20 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/Jeff/workspace/rails/blog/app/views/articles/index.html.erb:19: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/articles/index.html.erb:19: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started POST "/__web_console/repl_sessions/6c62cf81cba80ac99ddf5f3378b8b7e1/trace" for 127.0.0.1 at 2017-05-09 17:29:08 -0500
+Started POST "/__web_console/repl_sessions/6c62cf81cba80ac99ddf5f3378b8b7e1/trace" for 127.0.0.1 at 2017-05-09 17:29:27 -0500
+Started POST "/__web_console/repl_sessions/6c62cf81cba80ac99ddf5f3378b8b7e1/trace" for 127.0.0.1 at 2017-05-09 17:29:29 -0500
+Started POST "/__web_console/repl_sessions/6c62cf81cba80ac99ddf5f3378b8b7e1/trace" for 127.0.0.1 at 2017-05-09 17:37:34 -0500
+Started POST "/__web_console/repl_sessions/6c62cf81cba80ac99ddf5f3378b8b7e1/trace" for 127.0.0.1 at 2017-05-09 17:37:40 -0500
+Started POST "/__web_console/repl_sessions/6c62cf81cba80ac99ddf5f3378b8b7e1/trace" for 127.0.0.1 at 2017-05-09 17:37:42 -0500
+Started POST "/__web_console/repl_sessions/6c62cf81cba80ac99ddf5f3378b8b7e1/trace" for 127.0.0.1 at 2017-05-09 17:37:44 -0500
+Started POST "/__web_console/repl_sessions/6c62cf81cba80ac99ddf5f3378b8b7e1/trace" for 127.0.0.1 at 2017-05-09 17:37:45 -0500
+Started POST "/__web_console/repl_sessions/6c62cf81cba80ac99ddf5f3378b8b7e1/trace" for 127.0.0.1 at 2017-05-09 17:38:07 -0500
+Started GET "/articles" for 127.0.0.1 at 2017-05-09 17:43:45 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (4.4ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `do' for #<Enumerator:0x007ff61ad341a0>):
+     6:     <th>Text</th>
+     7:   </tr>
+     8: 
+     9:   <% @articles.each.do |article| %>
+    10:     <tr>
+    11:       <td><%= article.title %></td>
+    12:       <td><%= article.text %></td>
+  
+app/views/articles/index.html.erb:9:in `_app_views_articles_index_html_erb__3402855013054507323_70347494405580'
+Started GET "/articles" for 127.0.0.1 at 2017-05-09 17:45:25 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/Jeff/workspace/rails/blog/app/views/articles/index.html.erb:19: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/articles/index.html.erb:19: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/articles" for 127.0.0.1 at 2017-05-09 17:46:20 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/Jeff/workspace/rails/blog/app/views/articles/index.html.erb:22: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/articles/index.html.erb:22: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/articles" for 127.0.0.1 at 2017-05-09 17:46:40 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/Jeff/workspace/rails/blog/app/views/articles/index.html.erb:18: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/articles/index.html.erb:18: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/articles/show" for 127.0.0.1 at 2017-05-09 17:48:07 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=show):
+  
+app/controllers/articles_controller.rb:8:in `show'
+Started GET "/articles" for 127.0.0.1 at 2017-05-09 17:48:17 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/Jeff/workspace/rails/blog/app/views/articles/index.html.erb:18: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/articles/index.html.erb:18: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/articles" for 127.0.0.1 at 2017-05-09 17:52:42 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/Jeff/workspace/rails/blog/app/views/articles/index.html.erb:9: syntax error, unexpected ')'
+ @articles.each.do |article| );@output_buffer.safe_append='
+                              ^
+/Users/Jeff/workspace/rails/blog/app/views/articles/index.html.erb:15: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;   end 
+               ^
+/Users/Jeff/workspace/rails/blog/app/views/articles/index.html.erb:18: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/Users/Jeff/workspace/rails/blog/app/views/articles/index.html.erb:20: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/articles/index.html.erb:9: syntax error, unexpected ')'
+app/views/articles/index.html.erb:15: syntax error, unexpected keyword_end, expecting ')'
+app/views/articles/index.html.erb:18: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/articles/index.html.erb:20: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/articles" for 127.0.0.1 at 2017-05-09 17:53:05 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/Jeff/workspace/rails/blog/app/views/articles/index.html.erb:18: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/articles/index.html.erb:18: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/articles" for 127.0.0.1 at 2017-05-09 17:55:45 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/Jeff/workspace/rails/blog/app/views/articles/index.html.erb:18: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/articles/index.html.erb:18: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/articles" for 127.0.0.1 at 2017-05-09 18:06:14 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/Jeff/workspace/rails/blog/app/views/articles/index.html.erb:18: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/articles/index.html.erb:18: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/articles" for 127.0.0.1 at 2017-05-09 18:09:46 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/Jeff/workspace/rails/blog/app/views/articles/index.html.erb:18: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/articles/index.html.erb:18: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/articles" for 127.0.0.1 at 2017-05-09 18:10:12 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/Jeff/workspace/rails/blog/app/views/articles/index.html.erb:18: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/articles/index.html.erb:18: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/" for 127.0.0.1 at 2017-05-09 18:10:22 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 259ms (Views: 257.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2017-05-09 18:10:27 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/new"):
+  
+actionpack (5.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.0) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.2) lib/rack/method_override.rb:22:in `call'
+rack (2.0.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.0) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.2) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.0) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/articles/5" for 127.0.0.1 at 2017-05-09 18:10:42 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 27ms (Views: 14.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/articles/10" for 127.0.0.1 at 2017-05-09 18:10:47 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=10):
+  
+app/controllers/articles_controller.rb:8:in `show'
+Started GET "/articles/9" for 127.0.0.1 at 2017-05-09 18:10:57 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=9):
+  
+app/controllers/articles_controller.rb:8:in `show'
+Started GET "/articles/8" for 127.0.0.1 at 2017-05-09 18:11:01 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=8):
+  
+app/controllers/articles_controller.rb:8:in `show'
+Started GET "/articles/7" for 127.0.0.1 at 2017-05-09 18:11:05 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 21ms (Views: 18.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2017-05-09 18:11:11 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2017-05-09 18:14:09 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 22ms (Views: 13.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-05-09 18:14:14 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/Jeff/workspace/rails/blog/app/views/articles/index.html.erb:18: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/articles/index.html.erb:18: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/articles" for 127.0.0.1 at 2017-05-09 18:14:37 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 8ms
+
+
+  
+SyntaxError (/Users/Jeff/workspace/rails/blog/app/views/articles/index.html.erb:18: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/articles/index.html.erb:18: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/articles" for 127.0.0.1 at 2017-05-09 18:14:50 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 6ms
+
+
+  
+SyntaxError (/Users/Jeff/workspace/rails/blog/app/views/articles/index.html.erb:31: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/articles/index.html.erb:31: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/articles" for 127.0.0.1 at 2017-05-09 18:15:08 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 6ms
+
+
+  
+SyntaxError (/Users/Jeff/workspace/rails/blog/app/views/articles/index.html.erb:18: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/articles/index.html.erb:18: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started POST "/__web_console/repl_sessions/a800f129324baae83204a16e80bd29b6/trace" for 127.0.0.1 at 2017-05-09 18:15:12 -0500
+Started GET "/articles/new" for 127.0.0.1 at 2017-05-09 18:29:49 -0500
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (23.3ms)
+Completed 200 OK in 220ms (Views: 207.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2017-05-09 18:30:01 -0500
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mgoPG/yjm8KiaKdXmmJQcAiOoBhLXY02pCqeMwT1QL2Q++uNp3D4JVcKTHGPHPBuoD164MoNRxy4yv3pETv7/A==", "article"=>{"title"=>"one more time", "text"=>"asf as df asdfas fa sdf asdf as df asd f asd fa f we vzf v sdfv a fv"}, "commit"=>"Save Article"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "one more time"], ["text", "asf as df asdfas fa sdf asdf as df asd f asd fa f we vzf v sdfv a fv"], ["created_at", "2017-05-09 23:30:01.154962"], ["updated_at", "2017-05-09 23:30:01.154962"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/articles/8
+Completed 302 Found in 18ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/articles/8" for 127.0.0.1 at 2017-05-09 18:30:01 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 23ms (Views: 15.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-05-09 18:30:05 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/Jeff/workspace/rails/blog/app/views/articles/index.html.erb:18: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/articles/index.html.erb:18: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/articles" for 127.0.0.1 at 2017-05-09 22:52:06 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 164ms (Views: 152.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2017-05-09 22:52:09 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 26ms (Views: 18.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-09 23:20:52 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 155ms (Views: 144.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-05-09 23:20:55 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 40ms (Views: 32.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-05-09 23:20:59 -0500
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 34ms (Views: 31.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2017-05-09 23:21:08 -0500
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JJtdTSWjYJWzDqUnnaficzZQpgMttjdBn9H7RuuayjSsTeIhkZx5IO0XD/7FVVTxbCPXF6c7fInlZMOZAIiN5w==", "article"=>{"title"=>"this is a nfd a sdf a f", "text"=>" asdf as df as'dlfknas ksdnf a;skdf as;df as;k"}, "commit"=>"Save Article"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "this is a nfd a sdf a f"], ["text", " asdf as df as'dlfknas ksdnf a;skdf as;df as;k"], ["created_at", "2017-05-10 04:21:08.207835"], ["updated_at", "2017-05-10 04:21:08.207835"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/articles/9
+Completed 302 Found in 6ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/articles/9" for 127.0.0.1 at 2017-05-09 23:21:08 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 43ms (Views: 38.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-05-09 23:21:12 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 31ms (Views: 28.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2017-05-09 23:21:44 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 29ms (Views: 26.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2017-05-09 23:21:49 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 30ms (Views: 27.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2017-05-09 23:22:04 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 38ms (Views: 35.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-05-09 23:22:05 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 43ms (Views: 39.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-05-09 23:26:18 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 47ms (Views: 41.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-05-09 23:26:22 -0500
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 41ms (Views: 39.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2017-05-09 23:26:26 -0500
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EfX88vUAYF0RIcb7f/5/2tQ1qwpk4wnDr5M4tS1bx+SZI0OeQT956E84bCInDMlYjkbaHu5uQgvVJgBqxkmANw==", "article"=>{"title"=>"", "text"=>"asdf"}, "commit"=>"Save Article"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-05-09 23:26:26 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 21ms (Views: 18.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-05-09 23:26:28 -0500
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 31ms (Views: 29.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2017-05-09 23:26:31 -0500
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IrYf3lxBPyxwPLOntO0TSlGGAGUapxSUH9Ig/ScCGM6qYKCy6H4mmS4lGX7sH6XIC/VxcZAqX1xlZxgizBBfHQ==", "article"=>{"title"=>"", "text"=>"asdfaas fasd a"}, "commit"=>"Save Article"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-05-09 23:26:31 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 19ms (Views: 16.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-05-09 23:26:33 -0500
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 27ms (Views: 25.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2017-05-09 23:26:41 -0500
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JLBk0HYx0b0yt2/yzkrpMjDr0FwNKwpRXVv9ahB+pmGsZtu8wg7ICGyuxSuWuF+wapihSIemQZkn7sW1+2zhsg==", "article"=>{"title"=>"asdf aaaaaaa", "text"=>"a q asd as adsfasd a"}, "commit"=>"Save Article"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "asdf aaaaaaa"], ["text", "a q asd as adsfasd a"], ["created_at", "2017-05-10 04:26:41.905618"], ["updated_at", "2017-05-10 04:26:41.905618"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/articles/10
+Completed 302 Found in 4ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/articles/10" for 127.0.0.1 at 2017-05-09 23:26:41 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 19ms (Views: 16.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-05-09 23:26:43 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 30ms (Views: 27.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-05-09 23:35:54 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 24ms (Views: 21.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-05-09 23:35:55 -0500
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (11.3ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `erros' for #<Article:0x007f81de1599f8>
+Did you mean?  errors):
+    2: 
+    3: <%= form_for :article, url: articles_path do |f| %>
+    4: 
+    5: <% if @article.erros.any? %>
+    6:   <div id="error_explanation">
+    7:     <h2>
+    8:       <%= pluralize(@article.errors.count, "error") %> prohibited this article from being saved:
+  
+app/views/articles/new.html.erb:5:in `block in _app_views_articles_new_html_erb__3007436402758932412_70097876730500'
+app/views/articles/new.html.erb:3:in `_app_views_articles_new_html_erb__3007436402758932412_70097876730500'
+Started GET "/articles/new" for 127.0.0.1 at 2017-05-09 23:36:13 -0500
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 19ms (Views: 16.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2017-05-09 23:36:16 -0500
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vmZ6HexGwHyo40ZudV5u/DwxYbGlpQe2ROwJxoNjPnq0l56Lt5Wjm12BrUhgIM7ilIK7SST1zZxYDGoclq2FOw==", "article"=>{"title"=>"", "text"=>""}, "commit"=>"Save Article"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 24ms (Views: 19.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-05-09 23:52:50 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 27ms (Views: 23.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/articles/1/edit" for 127.0.0.1 at 2017-05-09 23:52:53 -0500
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/edit.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 32ms (Views: 27.1ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/articles/1" for 127.0.0.1 at 2017-05-09 23:53:09 -0500
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ozPhtDGH1jl5mUyOdBNH1jN4neBcSKrv2bzuNqcRldh/6EUW+nC6NAyG1GrmjLKTKolTO0EWfSyTYiQTGtIq0A==", "article"=>{"title"=>"asdf", "text"=>"lab rat, lab rat, lab rat"}, "commit"=>"Update Article", "id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/edit.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 30ms (Views: 27.1ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/articles/1" for 127.0.0.1 at 2017-05-09 23:53:15 -0500
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vkrhx0KTb9UzycRodrJuZavIjGHkCESQTZ3gdXs/AzZcuwVRGUAMMsarL05jzM57A3tWmWVYjrpRfYOvbvG4dw==", "article"=>{"title"=>"asdf1", "text"=>"lab rat, lab rat, lab rat"}, "commit"=>"Update Article", "id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "articles" SET "title" = ?, "text" = ?, "updated_at" = ? WHERE "articles"."id" = ?[0m  [["title", "asdf1"], ["text", "lab rat, lab rat, lab rat"], ["updated_at", "2017-05-10 04:53:15.241950"], ["id", 1]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/articles/1
+Completed 302 Found in 4ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2017-05-09 23:53:15 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 20ms (Views: 17.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-05-09 23:53:17 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 28ms (Views: 25.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/2/edit" for 127.0.0.1 at 2017-05-09 23:53:23 -0500
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/edit.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 31ms (Views: 28.5ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/articles/2" for 127.0.0.1 at 2017-05-09 23:53:46 -0500
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"E6LFaa/a3hDyZkm8GWPUJuSK3JrlRs2ZiYmRedoswo6i4z0UmqkT1pJ00X5dXGZiM9V0tl+vxeJ9Yh6wk738nA==", "article"=>{"title"=>"asdf2", "text"=>"Dr watson you bastard"}, "commit"=>"Update Article", "id"=>"2"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "articles" SET "title" = ?, "text" = ?, "updated_at" = ? WHERE "articles"."id" = ?[0m  [["title", "asdf2"], ["text", "Dr watson you bastard"], ["updated_at", "2017-05-10 04:53:46.080640"], ["id", 2]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/articles/2
+Completed 302 Found in 5ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/articles/2" for 127.0.0.1 at 2017-05-09 23:53:46 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 19ms (Views: 16.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-05-09 23:53:48 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 27ms (Views: 24.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-05-09 23:59:28 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 31ms (Views: 29.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-05-09 23:59:30 -0500
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (2.8ms) [cache miss]
+  Rendered articles/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 33ms (Views: 30.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-05-10 00:00:18 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 35ms (Views: 31.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-05-10 00:00:20 -0500
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (3.3ms) [cache miss]
+  Rendered articles/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 36ms (Views: 32.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2017-05-10 00:00:35 -0500
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zZlbqez7GcYaa7r89n+0B1/ygypciqUxTmLBAj+vj1JFT+TFWMQAc0RyECWujQKFBYHyPtYH7vk01/nd1L3IgQ==", "article"=>{"title"=>"butter", "text"=>"is nice on bread"}, "commit"=>"Create Article"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "butter"], ["text", "is nice on bread"], ["created_at", "2017-05-10 05:00:35.157351"], ["updated_at", "2017-05-10 05:00:35.157351"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/articles/11
+Completed 302 Found in 4ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/articles/11" for 127.0.0.1 at 2017-05-10 00:00:35 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 20ms (Views: 16.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/11/edit" for 127.0.0.1 at 2017-05-10 00:00:38 -0500
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/_form.html.erb (2.9ms) [cache miss]
+  Rendered articles/edit.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 29ms (Views: 25.8ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/articles/11" for 127.0.0.1 at 2017-05-10 00:00:44 -0500
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v4Lq/Ryv9BsXGtdotuGSSVZunqRkVqQBQHBOya8RT2GlnnNNx77niM6Kbrane/L8fTBTjuLolzoyqg/eulGPMg==", "article"=>{"title"=>"butter", "text"=>"is nice on bread, and on toast"}, "commit"=>"Update Article", "id"=>"11"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "articles" SET "text" = ?, "updated_at" = ? WHERE "articles"."id" = ?[0m  [["text", "is nice on bread, and on toast"], ["updated_at", "2017-05-10 05:00:44.838161"], ["id", 11]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/articles/11
+Completed 302 Found in 4ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/articles/11" for 127.0.0.1 at 2017-05-10 00:00:44 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 20ms (Views: 17.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-05-10 00:00:46 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 33ms (Views: 30.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/3/edit" for 127.0.0.1 at 2017-05-10 00:00:51 -0500
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/_form.html.erb (3.2ms) [cache miss]
+  Rendered articles/edit.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 29ms (Views: 26.1ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/articles/3" for 127.0.0.1 at 2017-05-10 00:01:03 -0500
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1KOaWHPf8GS7f2cfG9iXriO6qy1cAKXIomXoAO9olAJMpQazlpvt+3vkZcFcA8PglsrvUH97JcowcruJNYLIXQ==", "article"=>{"title"=>"asdf333", "text"=>"Trash in argaf afga "}, "commit"=>"Update Article", "id"=>"3"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "articles" SET "title" = ?, "text" = ?, "updated_at" = ? WHERE "articles"."id" = ?[0m  [["title", "asdf333"], ["text", "Trash in argaf afga "], ["updated_at", "2017-05-10 05:01:03.042111"], ["id", 3]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/articles/3
+Completed 302 Found in 6ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/articles/3" for 127.0.0.1 at 2017-05-10 00:01:03 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 22ms (Views: 20.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-05-10 00:01:04 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 38ms (Views: 35.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-05-10 00:07:18 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 32ms (Views: 27.6ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/articles/5" for 127.0.0.1 at 2017-05-10 00:07:28 -0500
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"rem2JnqUe8lDpSy3aCcHQjBdDM4UksE9gv9NFf18nIenGFKwIUcYLrbHx5F9WadcmO7WNpXCCxeeHy7P6LInxg==", "id"=>"5"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 5]]
+  [1m[35m (9.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 14ms (ActiveRecord: 9.9ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-05-10 00:07:28 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 28ms (Views: 25.6ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/articles/10" for 127.0.0.1 at 2017-05-10 00:07:37 -0500
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"bVHVjuVe9+skPM9sZN0ErCqNPK7uSaX8n42FWrtE0utnoDEYvo2UDNFeJEpxo6Sygj7mVm8Zb9aDbeaAroppqg==", "id"=>"10"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 10]]
+  [1m[35m (9.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 14ms (ActiveRecord: 9.9ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-05-10 00:07:37 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 20ms (Views: 17.4ms | ActiveRecord: 0.2ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateComments (20170510230439)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "commenter" varchar, "body" text, "article_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_3bf61a60d3"
+FOREIGN KEY ("article_id")
+  REFERENCES "articles" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_comments_on_article_id" ON "comments" ("article_id")[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170510230439"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_comments_on_article_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_comments_on_article_id' AND type='index'
+[0m
+Started GET "/articles" for 127.0.0.1 at 2017-05-11 09:29:12 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 284ms (Views: 262.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-11 09:29:19 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 25ms (Views: 21.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-05-11 09:29:21 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 28ms (Views: 26.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2017-05-11 09:29:23 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 1]]
+  Rendered articles/show.html.erb within layouts/application (55.6ms)
+Completed 200 OK in 105ms (Views: 89.5ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/articles/1/comments" for 127.0.0.1 at 2017-05-11 09:29:33 -0500
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wyyra+QUX3Uodp6EbTXhCJlEW7/6An8C1KhKPW7xPxBYbCgH6z0abtCmsZZC+aBfTafroa2FAUHVCUG+eW1SMw==", "comment"=>{"commenter"=>"jeff", "body"=>"af dsf asd fa dsf asd fas'kdja;lsdkfj aa sd;lfkaj "}, "commit"=>"Create Comment", "article_id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "comments" ("commenter", "body", "article_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["commenter", "jeff"], ["body", "af dsf asd fa dsf asd fas'kdja;lsdkfj aa sd;lfkaj "], ["article_id", 1], ["created_at", "2017-05-11 14:29:33.738296"], ["updated_at", "2017-05-11 14:29:33.738296"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/articles/1
+Completed 302 Found in 9ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2017-05-11 09:29:33 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 1]]
+  Rendered articles/show.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 41ms (Views: 37.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/articles/1/comments" for 127.0.0.1 at 2017-05-11 09:29:44 -0500
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vfBEZnn70z8TeasgCwmlWltIrNJSK/RrvPjQuRNqzSXoBBAVgObGPj/XeITOuKCOp7jSMSncvtJQvXALK4orUA==", "comment"=>{"commenter"=>"wally", "body"=>"asdf qwr sdfg rt brshn sdgnbks dgbks dgbkdf dkfg bkdf gb"}, "commit"=>"Create Comment", "article_id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "comments" ("commenter", "body", "article_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["commenter", "wally"], ["body", "asdf qwr sdfg rt brshn sdgnbks dgbks dgbkdf dkfg bkdf gb"], ["article_id", 1], ["created_at", "2017-05-11 14:29:44.234686"], ["updated_at", "2017-05-11 14:29:44.234686"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/articles/1
+Completed 302 Found in 8ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2017-05-11 09:29:44 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 1]]
+  Rendered articles/show.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 47ms (Views: 43.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-05-11 09:29:49 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 39ms (Views: 37.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/2" for 127.0.0.1 at 2017-05-11 09:29:53 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 2]]
+  Rendered articles/show.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 34ms (Views: 31.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/articles/2/comments" for 127.0.0.1 at 2017-05-11 09:30:26 -0500
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JPqTJWWQItDEZ7i7lCwuWSbR6QPW7HWT4H2pyVpD3hysvn3p4vN43ApvmaBtCuBb67e7pY5cqsiBhNFPyFzR2g==", "comment"=>{"commenter"=>"Sherlock", "body"=>"blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah "}, "commit"=>"Create Comment", "article_id"=>"2"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "comments" ("commenter", "body", "article_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["commenter", "Sherlock"], ["body", "blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah "], ["article_id", 2], ["created_at", "2017-05-11 14:30:26.538069"], ["updated_at", "2017-05-11 14:30:26.538069"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/articles/2
+Completed 302 Found in 5ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/articles/2" for 127.0.0.1 at 2017-05-11 09:30:26 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 2]]
+  Rendered articles/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 25ms (Views: 22.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-05-11 09:30:33 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 34ms (Views: 31.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-05-11 09:41:28 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 21ms (Views: 18.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2017-05-11 09:41:31 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 1]]
+  Rendered comments/_comment.html.erb (4.2ms) [cache miss]
+  Rendered comments/_form.html.erb (10.3ms) [cache miss]
+  Rendered articles/show.html.erb within layouts/application (19.8ms)
+Completed 200 OK in 43ms (Views: 40.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/articles/1/comments" for 127.0.0.1 at 2017-05-11 09:41:40 -0500
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0MkKUP13vNcGw2apYTwxmmdE6N2OL4ANrCjyxYa4yLVLiYk88l75zP4TSbtO8HDNs6dYw9mo/k6tiflGkSSllg==", "comment"=>{"commenter"=>"three", "body"=>"sd fa fas df asd f"}, "commit"=>"Create Comment", "article_id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "comments" ("commenter", "body", "article_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["commenter", "three"], ["body", "sd fa fas df asd f"], ["article_id", 1], ["created_at", "2017-05-11 14:41:40.319107"], ["updated_at", "2017-05-11 14:41:40.319107"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/articles/1
+Completed 302 Found in 5ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2017-05-11 09:41:40 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 1]]
+  Rendered comments/_comment.html.erb (1.6ms) [cache miss]
+  Rendered comments/_form.html.erb (1.7ms) [cache miss]
+  Rendered articles/show.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 24ms (Views: 22.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2017-05-11 09:52:12 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered comments/_comment.html.erb (0.7ms)
+  Rendered articles/show.html.erb within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 1.0ms)
+
+
+  
+SyntaxError (/Users/Jeff/workspace/rails/blog/app/views/comments/_comment.html.erb:13: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+'.freeze;    + link_to 'Destroy Comment', [comment.art
+                        ^
+/Users/Jeff/workspace/rails/blog/app/views/comments/_comment.html.erb:13: syntax error, unexpected ',', expecting keyword_end
+  + link_to 'Destroy Comment', [comment.article, comment],
+                              ^
+/Users/Jeff/workspace/rails/blog/app/views/comments/_comment.html.erb:13: syntax error, unexpected ',', expecting keyword_end
+', [comment.article, comment],
+                              ^
+/Users/Jeff/workspace/rails/blog/app/views/comments/_comment.html.erb:19: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/comments/_comment.html.erb:13: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+app/views/comments/_comment.html.erb:13: syntax error, unexpected ',', expecting keyword_end
+app/views/comments/_comment.html.erb:13: syntax error, unexpected ',', expecting keyword_end
+app/views/comments/_comment.html.erb:19: syntax error, unexpected keyword_ensure, expecting end-of-input
+app/views/articles/show.html.erb:12:in `_app_views_articles_show_html_erb__3960263920634877158_70215834312400'
+Started GET "/articles/1" for 127.0.0.1 at 2017-05-11 09:53:55 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 1]]
+  Rendered comments/_comment.html.erb (11.4ms) [cache miss]
+  Rendered comments/_form.html.erb (2.1ms) [cache miss]
+  Rendered articles/show.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 34ms (Views: 31.4ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/articles/1/comments/1" for 127.0.0.1 at 2017-05-11 09:54:05 -0500
+Processing by CommentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"mFcuJnRmJtEjgWolRpDo6LZaJWDAOCwsGpLDosFxTWDNo3pVjXsz0A8vuYGDIe08Sqpbg7vPZpX212MQ+ZGrFQ==", "article_id"=>"1", "id"=>"1"}
+Filter chain halted as #<Proc:0x007fb8d065fe10@/Users/Jeff/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.0/lib/action_controller/metal/http_authentication.rb:70> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started DELETE "/articles/1/comments/1" for 127.0.0.1 at 2017-05-11 09:54:12 -0500
+Processing by CommentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"mFcuJnRmJtEjgWolRpDo6LZaJWDAOCwsGpLDosFxTWDNo3pVjXsz0A8vuYGDIe08Sqpbg7vPZpX212MQ+ZGrFQ==", "article_id"=>"1", "id"=>"1"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."article_id" = ? AND "comments"."id" = ? LIMIT ?[0m  [["article_id", 1], ["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = ?[0m  [["id", 1]]
+  [1m[35m (8.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/articles/1
+Completed 302 Found in 19ms (ActiveRecord: 10.1ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2017-05-11 09:54:13 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 1]]
+  Rendered comments/_comment.html.erb (2.8ms) [cache miss]
+  Rendered comments/_form.html.erb (2.5ms) [cache miss]
+  Rendered articles/show.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 39ms (Views: 34.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-05-11 09:54:24 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 35ms (Views: 32.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/11" for 127.0.0.1 at 2017-05-11 09:54:28 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 11]]
+  Rendered comments/_comment.html.erb (2.8ms) [cache miss]
+  Rendered comments/_form.html.erb (3.7ms) [cache miss]
+  Rendered articles/show.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 48ms (Views: 45.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/articles/11/comments" for 127.0.0.1 at 2017-05-11 09:54:41 -0500
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EemEHAMJ1OVVdqkoESc76EQbRTzcrRWG0Fk2GC/m5C5gHJv7EQIRv7ma4divJr9xVwJniUY3JNR9bJPd9NcNUw==", "comment"=>{"commenter"=>"jam", "body"=>"bastard!"}, "commit"=>"Create Comment", "article_id"=>"11"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "comments" ("commenter", "body", "article_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["commenter", "jam"], ["body", "bastard!"], ["article_id", 11], ["created_at", "2017-05-11 14:54:41.411100"], ["updated_at", "2017-05-11 14:54:41.411100"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/articles/11
+Completed 302 Found in 5ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/articles/11" for 127.0.0.1 at 2017-05-11 09:54:41 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 11]]
+  Rendered comments/_comment.html.erb (2.3ms) [cache miss]
+  Rendered comments/_form.html.erb (3.2ms) [cache miss]
+  Rendered articles/show.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 27ms (Views: 24.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-05-11 09:54:45 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 36ms (Views: 33.7ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/articles/6" for 127.0.0.1 at 2017-05-11 09:54:53 -0500
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"bQ9q7Le8CYYLdaNXe/7cd0FnaYMHkUv5FA9aVNiSr+g4+z6fTqEchyfbcPO+T9mjvZcXYHxmAUD4Svrm4HJJnQ==", "id"=>"6"}
+Filter chain halted as #<Proc:0x007fb8d03efb08@/Users/Jeff/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.0/lib/action_controller/metal/http_authentication.rb:70> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started DELETE "/articles/6" for 127.0.0.1 at 2017-05-11 09:54:54 -0500
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"bQ9q7Le8CYYLdaNXe/7cd0FnaYMHkUv5FA9aVNiSr+g4+z6fTqEchyfbcPO+T9mjvZcXYHxmAUD4Svrm4HJJnQ==", "id"=>"6"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 6]]
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 6]]
+  [1m[35m (8.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 13ms (ActiveRecord: 8.6ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-05-11 09:54:54 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 21ms (Views: 18.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/11" for 127.0.0.1 at 2017-05-11 10:12:57 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 11]]
+  Rendered comments/_comment.html.erb (3.9ms) [cache miss]
+  Rendered comments/_form.html.erb (4.8ms) [cache miss]
+  Rendered articles/show.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 39ms (Views: 36.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-05-11 10:13:00 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 42ms (Views: 40.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/11/edit" for 127.0.0.1 at 2017-05-11 10:13:15 -0500
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/_form.html.erb (4.0ms) [cache miss]
+  Rendered articles/edit.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 34ms (Views: 30.7ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/articles/11" for 127.0.0.1 at 2017-05-11 10:13:29 -0500
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jLxwL/4zc4BhmFFLmN4oFapeZH7jvuCsqM+s7CNhQzQAolusxjPHIFWbi74ujoyMTn0iMjuBk/EejBITBjmFpA==", "article"=>{"title"=>"butter", "text"=>"is nice on bread, and on toast. ugly jam"}, "commit"=>"Update Article", "id"=>"11"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "articles" SET "text" = ?, "updated_at" = ? WHERE "articles"."id" = ?[0m  [["text", "is nice on bread, and on toast. ugly jam"], ["updated_at", "2017-05-11 15:13:29.502829"], ["id", 11]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/articles/11
+Completed 302 Found in 5ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/articles/11" for 127.0.0.1 at 2017-05-11 10:13:29 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 11]]
+  Rendered comments/_comment.html.erb (2.3ms) [cache miss]
+  Rendered comments/_form.html.erb (3.8ms) [cache miss]
+  Rendered articles/show.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 30ms (Views: 27.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-05-11 10:13:34 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 38ms (Views: 36.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-05-11 10:13:37 -0500
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (2.3ms) [cache miss]
+  Rendered articles/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 40ms (Views: 30.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2017-05-11 10:14:53 -0500
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ErC1xXtPndyq34JIMNT+II8i6x59471StlepFPi8DZPgOuk47F+VkKn+91WF9ASVUC4mofU66DS5ZetHR6sn+w==", "article"=>{"title"=>"bob", "text"=>"asdf a fa sd fa sfas  asdf as df asdf as f asdf asd fa sdf sa"}, "commit"=>"Create Article"}
+Filter chain halted as #<Proc:0x007fb8d03efb08@/Users/Jeff/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.0/lib/action_controller/metal/http_authentication.rb:70> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2017-05-11 10:14:53 -0500
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ErC1xXtPndyq34JIMNT+II8i6x59471StlepFPi8DZPgOuk47F+VkKn+91WF9ASVUC4mofU66DS5ZetHR6sn+w==", "article"=>{"title"=>"bob", "text"=>"asdf a fa sd fa sfas  asdf as df asdf as f asdf asd fa sdf sa"}, "commit"=>"Create Article"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (2.4ms) [cache miss]
+  Rendered articles/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 23ms (Views: 19.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2017-05-11 10:14:59 -0500
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xLsl4T3ysVqrzfRP/BV9GJnT/keSebLV9Z8/c7GgSMaRT3GSxO+kW4djJ+s5pHjMZSOApOmO+GwZ2p/BiUCusw==", "article"=>{"title"=>"bobby", "text"=>"asdf a fa sd fa sfas  asdf as df asdf as f asdf asd fa sdf sa"}, "commit"=>"Create Article"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "bobby"], ["text", "asdf a fa sd fa sfas  asdf as df asdf as f asdf asd fa sdf sa"], ["created_at", "2017-05-11 15:14:59.998484"], ["updated_at", "2017-05-11 15:14:59.998484"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/articles/12
+Completed 302 Found in 5ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/articles/12" for 127.0.0.1 at 2017-05-11 10:15:00 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 12]]
+  Rendered comments/_comment.html.erb (1.6ms) [cache miss]
+  Rendered comments/_form.html.erb (4.0ms) [cache miss]
+  Rendered articles/show.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 31ms (Views: 28.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-05-11 10:15:02 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 42ms (Views: 39.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/12" for 127.0.0.1 at 2017-05-11 10:15:06 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 12]]
+  Rendered comments/_comment.html.erb (3.3ms) [cache miss]
+  Rendered comments/_form.html.erb (4.2ms) [cache miss]
+  Rendered articles/show.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 44ms (Views: 39.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-05-11 10:15:34 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 46ms (Views: 42.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-05-11 10:15:35 -0500
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (3.2ms) [cache miss]
+  Rendered articles/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 44ms (Views: 42.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-05-11 10:15:38 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 45ms (Views: 41.4ms | ActiveRecord: 0.2ms)
+
+
